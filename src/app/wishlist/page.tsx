@@ -235,15 +235,7 @@ const Wishlist = () => {
                             }
                         </div>
 
-                        <div className={`list-product hide-product-sold grid lg:grid-cols-${layoutCol} sm:grid-cols-3 grid-cols-2 sm:gap-[30px] gap-[20px] mt-7`}>
-                            {currentProducts.map((item) => (
-                                item.id === 'no-data' ? (
-                                    <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
-                                ) : (
-                                    <Product key={item.id} data={item} type='grid' />
-                                )
-                            ))}
-                        </div>
+                      
 
                         {pageCount > 1 && (
                             <div className="list-pagination flex items-center justify-center md:mt-10 mt-7">
